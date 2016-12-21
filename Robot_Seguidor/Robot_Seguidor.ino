@@ -17,7 +17,7 @@
  *    /    Vss3-4    ->     9                   /           
  *    / ----------------------------------------/             
  *    /         Modulo seguidor de linea        /   
- *    /    Parametro -> 	Numero de pin       /                     
+ *    /    Parametro -> 	Numero de pin         /                     
  *    /    S1        ->  Salida 1 del modulo    /
  *    /                   seguidor de linea     /       
  *    /    S2        ->   Salida 2 ..           /
