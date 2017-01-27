@@ -9,7 +9,6 @@ void Robot_Seguidor::Inicializar()
 	Sensor_3.Inicializar();
 	Sensor_4.Inicializar();
 	Sensor_5.Inicializar();
-	Sensor_6.Inicializar();
 }
 void Robot_Seguidor::Modo_Seguidor(int Kp,int Ki,int Kd,int Velocidad)
 {
@@ -26,25 +25,19 @@ void Robot_Seguidor::Modo_Seguidor(int Kp,int Ki,int Kd,int Velocidad)
     int Velocidad_motor_derecho = Velocidad+PID;
 
     
-    constrain(Velocidad_motor_izquierdo,0,200);
-    constrain(Velocidad_motor_derecho,0,200);
-    Robot.Adelante(Velocidad-PID,Velocidad+PID);
+    constrain(Velocidad_motor_izquierdo,0,255);
+    constrain(Velocidad_motor_derecho,0,255);
+    Robot.Adelante(Velocidad_motor_izquierdo,Velocidad_motor_derecho);
 
 }
 void Robot_Seguidor::Lectura_de_sensores()
 {
   
-  sensor[0]=!Sensor_1.Leer_sensor();
-  sensor[1]=!Sensor_2.Leer_sensor();
-  sensor[2]=!Sensor_3.Leer_sensor();
-  sensor[3]=!Sensor_4.Leer_sensor();
-  sensor[4]=!Sensor_5.Leer_sensor();
-  sensor[5]=Sensor_6.Leer_sensor();
-  
-  if(sensor[5]==1)
-  {
-    Robot.Stop();
-  }else{
+  sensor[0]=Sensor_1.Leer_sensor();
+  sensor[1]=Sensor_2.Leer_sensor();
+  sensor[2]=Sensor_3.Leer_sensor();
+  sensor[3]=Sensor_4.Leer_sensor();
+  sensor[4]=Sensor_5.Leer_sensor();
   
   //Detectar la desviacion ("Error") del seguidor de linea
   if((sensor[0]==0)&&(sensor[1]==0)&&(sensor[2]==0)&&(sensor[3]==0)&&(sensor[4]==0))
@@ -70,11 +63,6 @@ void Robot_Seguidor::Lectura_de_sensores()
   Error=-3;
   else if((sensor[0]==1)&&(sensor[1]==0)&&(sensor[2]==0)&&(sensor[3]==0)&&(sensor[4]==0))
   Error=-4;
-  else 
-  if(Error==-4) 
-  Error=-5;
-  else 
-  Error=5;
-  }
+ 
 }
 

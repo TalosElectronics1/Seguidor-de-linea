@@ -7,13 +7,13 @@ void Motor_DC::Inicializar_Motor()
   pinMode(B, OUTPUT);
   pinMode(Pwm, OUTPUT);
 }
-void Motor_DC::Adelante(int Velocidad)
+void Motor_DC::Atras(int Velocidad)
 {
   analogWrite(Pwm,Velocidad );
   digitalWrite(A, HIGH);
   digitalWrite(B, LOW);
 }
-void Motor_DC::Atras(int Velocidad)
+void Motor_DC::Adelante(int Velocidad)
 {
   analogWrite(Pwm,Velocidad );
   digitalWrite(A, LOW);
