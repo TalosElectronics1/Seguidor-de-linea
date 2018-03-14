@@ -28,7 +28,7 @@
  *    //////////////////////////////////////////
  */
 #include "Robot_Seguidor.h"
-Robot_Seguidor Robot(13,12,11,10,9,8,2,3,4,5,6);
+Robot_Seguidor Robot(13,12,11,10,8,9,2,3,4,5,6);
 
 void setup() 
 {
@@ -37,5 +37,5 @@ void setup()
 
 void loop() 
 {
-	Robot.Modo_Seguidor(12,0.25,10,170);//(int kP,int KI,int KD,int Velocidad)
+	Robot.Modo_Seguidor(8,5,1,230);//(int kP,int KI,int KD,int Velocidad)
 }   
