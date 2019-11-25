@@ -26,6 +26,9 @@
  *	  /    S5        ->   Salida 5 .....        /
  *	  /    S6        ->   Salida 6 ......       /
  *    //////////////////////////////////////////
+ 
+ TU CODIGO NO COMPILA MIRA EL SIGUIENTE ENLACE 
+https://yoq143iy2dta2nrr-2080276524.shopifypreview.com/blogs/tutoriales/faq-kit-seguidor-de-linea
  */
 #include "Robot_Seguidor.h"
 Robot_Seguidor Robot(13,12,11,10,8,9,2,3,4,5,6);
