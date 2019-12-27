@@ -12,4 +12,4 @@ Visita nuestra secion de [preguntas frecuentes](https://www.taloselectronics.com
 - ¿Como calibrar los sensores?
 - ¿En qué parte del código cambio las constantes del PID?
 
-![portada seguidor](https://raw.githubusercontent.com/TalosElectronics1/Robot-3-en-1/master/Diagramas/portada_faq_3n1.png "portada seguidor")
+![portada seguidor](https://cdn.shopify.com/s/files/1/0020/8027/6524/files/FAQ_seguidor_1024x1024.png?v=1577123937 "portada seguidor")
