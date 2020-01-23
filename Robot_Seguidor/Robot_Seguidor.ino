@@ -28,7 +28,7 @@
  *    //////////////////////////////////////////
  
  TU CODIGO NO COMPILA MIRA EL SIGUIENTE ENLACE 
-https://yoq143iy2dta2nrr-2080276524.shopifypreview.com/blogs/tutoriales/faq-kit-seguidor-de-linea
+https://www.taloselectronics.com/blogs/tutoriales/faq-kit-seguidor-de-linea
  */
 #include "Robot_Seguidor.h"
 Robot_Seguidor Robot(13,12,11,10,8,9,2,3,4,5,6);
